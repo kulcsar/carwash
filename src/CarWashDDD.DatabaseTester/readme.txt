@@ -1,0 +1,5 @@
+﻿Enable-Migrations -ContextProjectName CarWashDDD.Repository.EF -MigrationsDirectory DataMigrations
+
+add-migration -ConfigurationTypeName CarWashDDD.DatabaseTester.DataMigrations.Configuration "FirstInitialisation"
+
+update-database -ConfigurationTypeName CarWashDDD.DatabaseTester.DataMigrations.Configuration
